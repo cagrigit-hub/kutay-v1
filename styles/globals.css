@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  background: black;
+  scroll-behavior: smooth;
+}
+
+
+
+.marker {
+  font-family: 'Permanent Marker', cursive;
+}
+.rock {
+  font-family: 'Rock Salt', cursive;
+}
+
+
+.typed-cursor{
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+  font-size: 3rem;
+  color: rgb(236, 112, 112);
+}
+@keyframes typedjsBlink{
+  50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink{
+  0% { opacity: 1; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1; }
+}
+.typed-fade-out{
+  opacity: 0;
+  transition: opacity .25s;
+  -webkit-animation: 0;
+  animation: 0;
+}
+
+@media only screen and (max-width: 868px) {
+  .small {
+    align-items: center;
+  }
+  .typed-cursor{
+    opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+    font-size: 1.25rem;
+    color: rgb(236, 112, 112);
+  }
+}
